@@ -9,7 +9,6 @@ import { RestaurantsService } from './restaurants-service.service';
 })
 export class RestaurantsComponent implements OnInit {
 
-
   restaurants: Restaurant[] = [];
 
   constructor(private restaurantsService: RestaurantsService) { }
