@@ -7,6 +7,10 @@ export class OrderService {
 
   constructor(private cartService: ShoppingCartService) { }
 
+  itemsValue():number{
+    return this.cartService.totalizacao();
+  }
+
   cartItems(): CartItem[] {
     return this.cartService.items;
   }
