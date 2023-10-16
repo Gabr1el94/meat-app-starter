@@ -14,6 +14,10 @@
 
 `ng serve` ou `npm start`
 
+### Build Prod
+
+`ng build --prod`
+
 ## 2. Iniciando o Backend
 
 ### Instalando o json-server
