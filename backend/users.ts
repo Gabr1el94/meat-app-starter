@@ -6,7 +6,6 @@ export class User {
     matches(another:User): boolean {
         return another !== undefined && 
         another.email === this.email && 
-        another.name === this.name && 
         another.password === this.password
     }
 }
