@@ -21,6 +21,7 @@ import { OrderSummaryComponent } from './orderr-summary/orderr-summary.component
 import { SharedModule } from './shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LoginComponent } from './security/login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ReviewsComponent,
     OrderSummaryComponent,
     NotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
