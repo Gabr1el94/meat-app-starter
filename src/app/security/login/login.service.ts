@@ -15,7 +15,6 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   isLoggedIn(): boolean {
-    console.log(this.user);
     return this.user !== undefined;
   }
 

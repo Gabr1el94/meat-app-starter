@@ -16,17 +16,18 @@ server.use(middlewares)
 
 server.use(jsonServer.bodyParser)
 
+//routes for Loginn
+server.post('/login', handleAuthentication)
+server.use('/orders', handleAuthorization)
+
+server.use(router)
+
 // get files security for https
 const options = {
   cert: fs.readFileSync('./backend/keys/cert.pem'),
   key: fs.readFileSync('./backend/keys/key.pem')
 }
 
-//routes for Login
-server.post('/login', handleAuthentication)
-server.use('/orders', handleAuthorization)
-
-server.use(router)
 https.createServer(options, server).listen(3001, () => {
   console.log('JSON Server is running on port 3001')
 })
